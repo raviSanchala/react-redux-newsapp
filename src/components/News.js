@@ -1,13 +1,18 @@
-import React, {Suspense} from 'react'
+import React, { lazy, Suspense } from 'react'
 import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import Newslist from './Newslist';
-import About from './About';
+// import Newslist from './Newslist';
+// import About from './About';
+
+const Newslist = lazy(() => import('./Newslist'));
+const About = lazy(() => import('./About'));
+
+const LoadingFallback = () => <div>Loading...</div>;
 
 export default function Navbar(){
     // const Newslist = React.lazy(() => import()) 
     return(
         <>
-            <Suspense>
+            <Suspense fallback={<LoadingFallback />}>
                 <Routes>
                     <Route exact path="/" element={<React.Fragment><Newslist category="general" /> </React.Fragment> } />
                     <Route path="/aboutme" element={<About />} /> 
