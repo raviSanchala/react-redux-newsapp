@@ -1,8 +1,10 @@
-import React from 'react'
+import React,{ Suspense } from 'react'
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchNews } from '../features/newsSlices';
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
 const defaultImage = process.env.PUBLIC_URL +'/news-default-big.png';
+
 
 
 export default function Newslist(category){
