@@ -1,321 +1,422 @@
-import React from 'react'
-import '../assets/css/pillar-2.css';
+import React from "react";
+import "../assets/css/devresume.css";
 
-export default function About(){
-    return(
-        <>
-            <article className="resume-wrapper text-center position-relative">
-	    <div className="resume-wrapper-inner mx-auto text-start bg-white shadow-lg">
-		    <header className="resume-header pt-4 pt-md-0">
-			    <div className="row">
-				    <div className="col-block col-md-auto resume-picture-holder text-center text-md-start">
-				        <img className="picture" src="assets/images/profile.jpg" alt="" />
-				    </div>
-				    <div className="col">
-					    <div className="row p-4 justify-content-center justify-content-md-between">
-						    <div className="primary-info col-auto">
-							    <h1 className="name mt-0 mb-1 text-white text-uppercase text-uppercase">Ravi Sanchala </h1>
-							    <div className="title mb-3">Full Stack Developer</div>
-							    <ul className="list-unstyled">
-								    <li className="mb-2"><a className="text-link" href="#"><i className="far fa-envelope fa-fw me-2" data-fa-transform="grow-3"></i>ravi_sanchala@live.com</a></li>
-								    <li><a className="text-link" href="#"><i className="fas fa-mobile-alt fa-fw me-2" data-fa-transform="grow-6"></i>902 932 0916</a></li>
-							    </ul>
-						    </div>
-						    <div className="secondary-info col-auto mt-2">
-							    <ul className="resume-social list-unstyled">
-					                <li className="mb-3"><a className="text-link" href="#"><span className="fa-container text-center me-2"><i className="fab fa-linkedin-in fa-fw"></i></span>github.com/raviSanchala</a></li>
-					                <li className="mb-3"><a className="text-link" href="https://github.com/raviSanchala"><span className="fa-container text-center me-2"><i className="fab fa-github-alt fa-fw"></i></span>github.com/raviSanchala</a></li>
-                                    <li className="mb-3"><button className='btn btn-success'>Download Resume</button></li>
-							    </ul>
-						    </div>
-					    </div>
-					    
-				    </div>
-			    </div>
-		    </header>
-		    <div className="resume-body p-5">
-			    <section className="resume-section summary-section mb-5">
-				    <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Career Summary</h2>
-				    <div className="resume-section-content">
-					    <p className="mb-0">Summarise your career here. <a className="text-reset text-link" href="https://themes.3rdwavemedia.com/resources/sketch-template/pillar-sketch-sketch-resume-template-for-developers/" target="_blank">You can make a PDF version of your resume using our free Sketch template here</a>. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-				    </div>
-			    </section>
-			    <div className="row">
-				    <div className="col-lg-9">
-					    <section className="resume-section experience-section mb-5">
-						    <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Work Experience</h2>
-						    <div className="resume-section-content">
-							    <div className="resume-timeline position-relative">
-								    <article className="resume-timeline-item position-relative pb-5">
-									    
-									    <div className="resume-timeline-item-header mb-2">
-										    <div className="d-flex flex-column flex-md-row">
-										        <h3 className="resume-position-title font-weight-bold mb-1">Lead Developer</h3>
-										        <div className="resume-company-name ms-auto">Startup Hub</div>
-										    </div>
-										    <div className="resume-position-time">2023 - Present</div>
-									    </div>
-									    <div className="resume-timeline-item-desc">
-										    <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.</p>
-										    <h4 className="resume-timeline-item-desc-heading font-weight-bold">Achievements:</h4>
-										    <p>Praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-										    <ul>
-											    <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>
-											    <li>At vero eos et accusamus et iusto odio dignissimos.</li>
-											    <li>Blanditiis praesentium voluptatum deleniti atque corrupti.</li>
-											    <li>Maecenas tempus tellus eget.</li>
-										    </ul>
-										    <h4 className="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
-										    <ul className="list-inline">
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">Angular</span></li>
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">Python</span></li>
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">jQuery</span></li>
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">Webpack</span></li>
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">HTML/SASS</span></li>
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">PostgresSQL</span></li>
-										    </ul>
-									    </div>
+export default function About() {
+  return (
+    <>
+      <div class="main-wrapper">
+        <div class="container px-3 px-lg-5">
+          <article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
+            <div class="resume-header">
+              <div class="row align-items-center">
+                <div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
+                  <h2 class="resume-name mb-0 text-uppercase">Ravi Sanchala</h2>
+                  <div class="resume-tagline mb-3 mb-md-0">
+                    Senior Software Engineer
+                  </div>
+                </div>
+                <div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
+                  <ul class="list-unstyled mb-0">
+                    <li class="mb-2">
+                      <i class="fas fa-phone-square fa-fw fa-lg me-2 "></i>
+                      <a class="resume-link" href="tel:#">
+                        +91-902 932 0916
+                      </a>
+                    </li>
+                    <li class="mb-2">
+                      <i class="fas fa-envelope-square fa-fw fa-lg me-2"></i>
+                      <a
+                        class="resume-link"
+                        href="mailto:ravi_sanchala@live.com"
+                      >
+                        ravi_sanchala@live.com
+                      </a>
+                    </li>
+                    <li class="mb-2">
+                      <i class="fas fa-globe fa-fw fa-lg me-2"></i>
+                      <a
+                        class="resume-link"
+                        href="https://github.com/raviSanchala"
+                      >
+                        https://github.com/raviSanchala
+                      </a>
+                    </li>
+                    <li class="mb-0">
+                      <i class="fas fa-map-marker-alt fa-fw fa-lg me-2"></i>
+                      Rajkot, Gujarat, India
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="resume-intro py-3">
+              <div class="row align-items-center">
+                <div class="col-12 col-md-3 col-xl-2 text-center">
+                  <img
+                    class="resume-profile-image mb-3 mb-md-0 me-md-5  ms-md-0 rounded mx-auto"
+                    src="assets/images/profile.jpg"
+                    alt="image"
+                  />
+                </div>
 
-								    </article>
-								    
-								    <article className="resume-timeline-item position-relative pb-5">
-									    
-									    <div className="resume-timeline-item-header mb-2">
-										    <div className="d-flex flex-column flex-md-row">
-										        <h3 className="resume-position-title font-weight-bold mb-1">Senior Software Developer</h3>
-										        <div className="resume-company-name ms-auto">Google</div>
-										    </div>
-										    <div className="resume-position-time">2019 - 2023</div>
-									    </div>
-									    <div className="resume-timeline-item-desc">
-										    <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Donec pede justo, fringilla vel.</p>
-										    <h4 className="resume-timeline-item-desc-heading font-weight-bold">Achievements</h4>
-										    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-										    <h4 className="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
-										    <ul className="list-inline">
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">React</span></li>
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">Redux</span></li>
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">Django</span></li>
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">Webpack</span></li>
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">HTML/SASS</span></li>
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">MySQL</span></li>
-										    </ul>
-									    </div>
+                <div class="col text-start">
+                  <p class="mb-0">
+                    -Technically sophisticated professional with a career of 10+
+                    yearsreflecting strong analytical skill and programming in
+                    IT etc. Possesses unsurpassed analytical skills to identify
+                    and resolve problems and troubleshoot.
+                    <br />
+                    -Garnered solid experience in coding of software
+                    applications in, PHP, Laravel, Java Script, json, JWT,
+                    Passport Authentication, Rest API, MVC XML, MySQL, MongoDB.
+                    Elementary Knowledge of AWS, WordPress.
+                    <br />
+                    -Hands on experience in typescript, NodeJS, React Js,
+                    Angular
+                    <br />
+                    -knowledge of algorithms and data structures, Design
+                    Patterns
+                  </p>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="resume-body">
+              <div class="row">
+                <div class="resume-main col-12 col-lg-8 col-xl-9   pe-0   pe-lg-5">
+                  <section class="work-section py-3">
+                    <h3 class="text-uppercase resume-section-heading mb-4">
+                      Work Experiences
+                    </h3>
+                    <div class="item mb-3">
+                      <div class="item-heading row align-items-center mb-2">
+                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
+                          Team Leader
+                        </h4>
+                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+						Alakmalak Technology Pvt. Ltd. | 2021 - Present
+                        </div>
+                      </div>
+                      <div class="item-content">
+                        <ul class="resume-list">
+                          <li>Analyzing the technical requirement from the business. Quick to learn the complex system design
+and able to contribute in short time.</li>
+                          <li>Led Teams in overseeing the entire software development cycle for more than 4 Client.</li>
+                          <li>Orchestrated technical leadership for development and management of key featuresin line with
+proper coding standards. Prepared documents for the key project.</li>
+<li>Implemented the unit and feature test culture that gave the ability to improve the existing CI/CD
+pipeline and decreased the no of bugs</li>
+                        </ul>
+                      </div>
+                    </div>
+					<br/>
+                    <div class="item mb-3">
+                      <div class="item-heading row align-items-center mb-2">
+                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
+                          Lead Software Developer
+                        </h4>
+                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+                          Apple | 2022 - 2023
+                        </div>
+                      </div>
+                      <div class="item-content">
+                        <p>
+                          Role description goes here ipsum dolor sit amet,
+                          consectetuer adipiscing elit. Aenean commodo ligula
+                          eget dolor. Aenean massa. Cum sociis natoque penatibus
+                          et magnis dis parturient montes, nascetur ridiculus
+                          mus. Donec quam felis, ultricies nec, pellentesque eu,
+                          pretium quis, sem. Donec pede justo, fringilla vel.
+                        </p>
+                        <ul class="resume-list">
+                          <li>Lorem ipsum dolor sit amet, consectetuer.</li>
+                          <li>Aenean commodo ligula eget dolor.</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="item mb-3">
+                      <div class="item-heading row align-items-center mb-2">
+                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
+                          Senior Software Developer
+                        </h4>
+                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+                          Dropbox | 2020 - 2022
+                        </div>
+                      </div>
+                      <div class="item-content">
+                        <p>
+                          Role description goes here ipsum dolor sit amet,
+                          consectetuer adipiscing elit. Aenean commodo ligula
+                          eget dolor. Aenean massa. Cum sociis natoque penatibus
+                          et magnis dis parturient montes, nascetur ridiculus
+                          mus.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="item-heading row align-items-center mb-2">
+                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
+                          Senior Developer
+                        </h4>
+                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+                          Uber | 2019 - 2020
+                        </div>
+                      </div>
+                      <div class="item-content">
+                        <p>
+                          Role description goes here ipsum dolor sit amet,
+                          consectetuer adipiscing elit. Aenean commodo ligula
+                          eget dolor. Aenean massa. Cum sociis natoque
+                          penatibus.{" "}
+                        </p>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="item-heading row align-items-center mb-2">
+                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
+                          Backend Developer
+                        </h4>
+                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+                          Amazon | 2018 - 2019
+                        </div>
+                      </div>
+                      <div class="item-content">
+                        <p>
+                          Role description goes here ipsum dolor sit amet,
+                          consectetuer adipiscing elit. Aenean commodo ligula
+                          eget dolor. Aenean massa. Cum sociis natoque penatibus
+                          et magnis dis parturient montes, nascetur ridiculus
+                          mus.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="item-heading row align-items-center mb-2">
+                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
+                          Frontend Developer
+                        </h4>
+                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+                          Startup | 2017 - 2018
+                        </div>
+                      </div>
+                      <div class="item-content">
+                        <p>
+                          Role description goes here ipsum dolor sit amet,
+                          consectetuer adipiscing elit. Aenean commodo ligula
+                          eget dolor. Aenean massa. Cum sociis natoque
+                          penatibus.{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </section>
 
-								    </article>
-								    
-								    <article className="resume-timeline-item position-relative pb-5">
-									    
-									    <div className="resume-timeline-item-header mb-2">
-										    <div className="d-flex flex-column flex-md-row">
-										        <h3 className="resume-position-title font-weight-bold mb-1">Co-Founder & Lead Developer</h3>
-										        <div className="resume-company-name ms-auto">To-do Lists</div>
-										    </div>
-										    <div className="resume-position-time">2015 - 2019</div>
-									    </div>
-									    <div className="resume-timeline-item-desc">
-										    <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec.</p>
-										    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-										    <h4 className="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
-										    <ul className="list-inline">
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">Django</span></li>
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">JavaScript</span></li>
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">Node.js</span></li>
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">Require.js</span></li>
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">HTML/SASS</span></li>
-										    </ul>
-									    </div>
+                  <section class="project-section py-3">
+                    <h3 class="text-uppercase resume-section-heading mb-4">
+                      Projects
+                    </h3>
+                    <div class="item mb-3">
+                      <div class="item-heading row align-items-center mb-2">
+                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
+                          Project Lorem Ipsum
+                        </h4>
+                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+                          Open Source
+                        </div>
+                      </div>
+                      <div class="item-content">
+                        <p>
+                          You can use this section for your side projects. You
+                          can{" "}
+                          <a href="#" class="theme-link">
+                            provide a project link here
+                          </a>{" "}
+                          as well. Lorem ipsum dolor sit amet, consectetuer
+                          adipiscing elit. Aenean commodo ligula eget dolor.
+                          Aenean massa. Cum sociis natoque penatibus et magnis
+                          dis parturient montes, nascetur ridiculus mus.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="item-heading row align-items-center mb-2">
+                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
+                          Project Sed Fringilla
+                        </h4>
+                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+                          Open Source
+                        </div>
+                      </div>
+                      <div class="item-content">
+                        <p>
+                          You can use this section for your side projects. Cras
+                          dapibus. Vivamus elementum semper nisi. Aenean
+                          vulputate eleifend tellus. Aenean leo ligula,
+                          porttitor eu, consequat vitae, eleifend ac, enim.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="item-heading row align-items-center mb-2">
+                        <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">
+                          Project Praesent{" "}
+                        </h4>
+                        <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-start text-md-end">
+                          Open Source
+                        </div>
+                      </div>
+                      <div class="item-content">
+                        <p>
+                          You can use this section for your side projects. Cras
+                          dapibus. Vivamus elementum semper nisi. Aenean
+                          vulputate eleifend tellus. Aenean leo ligula,
+                          porttitor eu, consequat vitae, eleifend ac, enim.
+                        </p>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
+                  <section class="skills-section py-3">
+                    <h3 class="text-uppercase resume-section-heading mb-4">
+                      Skills
+                    </h3>
+                    <div class="item">
+                      <h4 class="item-title">Technical</h4>
+                      <ul class="list-unstyled resume-skills-list">
+                        <li class="mb-2">PHP, Laravel, CakePHP, CodeIgniter</li>
+                        <li class="mb-2">Node.js, React.js, Angular.js, Express, jQuery</li>
+                        <li class="mb-2">PostgreSQL, MySQL, MongoDB</li>
+                      </ul>
+                    </div>
+                    <div class="item">
+                      <h4 class="item-title">Management</h4>
+                      <ul class="list-unstyled resume-skills-list">
+                        <li class="mb-2">Project Management</li>
+                        <li class="mb-2">Team Leading</li>
+                        <li class="mb-2">Agile Methodology</li>
+                      </ul>
+                    </div>
+					<div class="item">
+                      <h5 class="item-title">Domain knowledge</h5>
+                      <ul class="list-unstyled resume-skills-list">
+                        <li class="mb-2">E-commerce, Travel, Medical, POS, Video-Streaming, ERP</li>
+                      </ul>
+                    </div>
+					<div class="item">
+                      <h4 class="item-title">Others</h4>
+                      <ul class="list-unstyled resume-skills-list">
+                        <li class="mb-2"><b>SVN : </b>SVN, GIT, CI/CD</li>
+						<li class="mb-2"><b>Automation, Unit testing : </b>Jenkins, PHP unit testing, Jira, Jira sprint</li>
+                        <li class="mb-2"><b>Servers : </b>AWS, Google Cloud</li>
+                        <li class="mb-2"><b>OS : </b>Linux, MacOS, Windows</li>
+                      </ul>
+                    </div>
+                  </section>
+                  <section class="education-section py-3">
+                    <h3 class="text-uppercase resume-section-heading mb-4">
+                      Education
+                    </h3>
+                    <ul class="list-unstyled resume-education-list">
+                      <li class="mb-3">
+                        <div class="resume-degree font-weight-bold">
+							Bachelor Of Engineering
+                        </div>
+                        <div class="resume-degree-org text-muted">
+                          	VTU
+                        </div>
+                        <div class="resume-degree-time text-muted">
+                          2008 - 2012
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                  <section class="education-section py-3">
+                    <h3 class="text-uppercase resume-section-heading mb-4">
+                      Personal Details
+                    </h3>
+                    <ul class="list-unstyled resume-awards-list">
+                      <li class="mb-3">
+                        <div class="font-weight-bold"><b>Address : </b>Maruti Duplex, Raiya Road</div>
+                        <div class="text-muted">
+                          Rajkot - 360007, India
+                        </div>
+                      </li>
+                      
+                    </ul>
+                  </section>
+                  <section class="skills-section py-3">
+                    <h3 class="text-uppercase resume-section-heading mb-4">
+                      Languages
+                    </h3>
+                    <ul class="list-unstyled resume-lang-list">
+                      <li class="mb-2">
+                        English <span class="text-muted">(Professional)</span>
+                      </li>
+                      <li>
+                        Hindi <span class="text-muted">(Professional)</span>
+                      </li>
+                    </ul>
+                  </section>
+                </aside>
+              </div>
+            </div>
+            <hr />
+            <div class="resume-footer text-center">
+              <ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
+                <li class="list-inline-item mb-lg-0 me-3">
+                  <a class="resume-link" href="#">
+                    <i
+                      class="fab fa-github-square fa-2x me-2"
+                      data-fa-transform="down-4"
+                    ></i>
+                    <span class="d-none d-lg-inline-block text-muted">
+                      github.com/username
+                    </span>
+                  </a>
+                </li>
+                <li class="list-inline-item mb-lg-0 me-3">
+                  <a class="resume-link" href="#">
+                    <i
+                      class="fab fa-linkedin fa-2x me-2"
+                      data-fa-transform="down-4"
+                    ></i>
+                    <span class="d-none d-lg-inline-block text-muted">
+                      linkedin.com/in/username
+                    </span>
+                  </a>
+                </li>
+                <li class="list-inline-item mb-lg-0 me-lg-3">
+                  <a class="resume-link" href="#">
+                    <i
+                      class="fab fa-twitter-square fa-2x me-2"
+                      data-fa-transform="down-4"
+                    ></i>
+                    <span class="d-none d-lg-inline-block text-muted">
+                      @twittername
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
 
-								    </article>
-								    
-								    <article className="resume-timeline-item position-relative">
-									    
-									    <div className="resume-timeline-item-header mb-2">
-										    <div className="d-flex flex-column flex-md-row">
-										        <h3 className="resume-position-title font-weight-bold mb-1">Web Developer <small className="text-muted">(Intern)</small></h3>
-										        <div className="resume-company-name ms-auto">Amazon</div>
-										    </div>
-										    <div className="resume-position-time">2014 - 2015</div>
-									    </div>
-									    <div className="resume-timeline-item-desc">
-										    <p>Role description goes here ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum.</p>
-										    <h4 className="resume-timeline-item-desc-heading font-weight-bold">Technologies used:</h4>
-										    <ul className="list-inline">
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">Ruby on Rails</span></li>
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">jQuery</span></li>
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">HTML/LESS</span></li>
-											    <li className="list-inline-item"><span className="badge bg-secondary badge-pill">MongoDB</span></li>
-										    </ul>
-									    </div>
-
-								    </article>
-								    
-								    
-							    </div>
-							    
-							    
-							    
-							    
-							    
-							    
-						    </div>
-					    </section>
-				    </div>
-				    <div className="col-lg-3">
-					    <section className="resume-section skills-section mb-5">
-						    <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Skills &amp; Tools</h2>
-						    <div className="resume-section-content">
-						        <div className="resume-skill-item">
-							        <h4 className="resume-skills-cat font-weight-bold">Frontend</h4>
-							        <ul className="list-unstyled mb-4">
-								        <li className="mb-2">
-								            <div className="resume-skill-name">Angular</div>
-									        <div className="progress resume-progress">
-											    <div className="progress-bar theme-progress-bar-dark" role="progressbar" style={{"width": '98%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-								        </li>
-								        <li className="mb-2">
-								            <div className="resume-skill-name">React</div>
-									        <div className="progress resume-progress">
-											    <div className="progress-bar theme-progress-bar-dark" role="progressbar" style={{"width": '94%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-								        </li>
-								        <li className="mb-2">
-								            <div className="resume-skill-name">JavaScript</div>
-									        <div className="progress resume-progress">
-											    <div className="progress-bar theme-progress-bar-dark" role="progressbar" style={{"width": '96%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-								        </li>
-								        
-								        <li className="mb-2">
-								            <div className="resume-skill-name">Node.js</div>
-									        <div className="progress resume-progress">
-											    <div className="progress-bar theme-progress-bar-dark" role="progressbar" style={{"width": '92%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-								        </li>
-								        <li className="mb-2">
-								            <div className="resume-skill-name">HTML/CSS/SASS/LESS</div>
-									        <div className="progress resume-progress">
-											    <div className="progress-bar theme-progress-bar-dark" role="progressbar" style={{"width": '96%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-								        </li>
-							        </ul>
-						        </div>
-						        
-						        <div className="resume-skill-item">
-						            <h4 className="resume-skills-cat font-weight-bold">Backend</h4>
-							        <ul className="list-unstyled">
-								        <li className="mb-2">
-								            <div className="resume-skill-name">Python/Django</div>
-									        <div className="progress resume-progress">
-											    <div className="progress-bar theme-progress-bar-dark" role="progressbar" style={{"width": '95%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-								        </li>
-								        <li className="mb-2">
-								            <div className="resume-skill-name">Ruby/Rails</div>
-									        <div className="progress resume-progress">
-											    <div className="progress-bar theme-progress-bar-dark" role="progressbar" style={{"width": '92%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-								        </li>
-								        <li className="mb-2">
-								            <div className="resume-skill-name">PHP</div>
-									        <div className="progress resume-progress">
-											    <div className="progress-bar theme-progress-bar-dark" role="progressbar" style={{"width": '86%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-								        </li>
-								        <li className="mb-2">
-								            <div className="resume-skill-name">WordPress/Shopify</div>
-									        <div className="progress resume-progress">
-											    <div className="progress-bar theme-progress-bar-dark" role="progressbar" style={{"width": '82%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
-								        </li>
-							        </ul>
-						        </div>
-						        
-						        <div className="resume-skill-item">
-						            <h4 className="resume-skills-cat font-weight-bold">Others</h4>
-						            <ul className="list-inline">
-							            <li className="list-inline-item"><span className="badge badge-light">DevOps</span></li>
-							            <li className="list-inline-item"><span className="badge badge-light">Code Review</span></li>
-							            <li className="list-inline-item"><span className="badge badge-light">Git</span></li>
-							            <li className="list-inline-item"><span className="badge badge-light">Unit Testing</span></li>
-							            <li className="list-inline-item"><span className="badge badge-light">Wireframing</span></li>
-							            <li className="list-inline-item"><span className="badge badge-light">Sketch</span></li>
-							            <li className="list-inline-item"><span className="badge badge-light">Balsamiq</span></li>
-							            <li className="list-inline-item"><span className="badge badge-light">WordPress</span></li>
-							            <li className="list-inline-item"><span className="badge badge-light">Shopify</span></li>
-						            </ul>
-						        </div>
-						    </div>
-					    </section>
-					    <section className="resume-section education-section mb-5">
-						    <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Education</h2>
-						    <div className="resume-section-content">
-							    <ul className="list-unstyled">
-								    <li className="mb-2">
-								        <div className="resume-degree font-weight-bold">MSc in Computer Science</div>
-								        <div className="resume-degree-org">University College London</div>
-								        <div className="resume-degree-time">2013 - 2014</div>
-								    </li>
-								    <li>
-								        <div className="resume-degree font-weight-bold">BSc Maths and Physics</div>
-								        <div className="resume-degree-org">Imperial College London</div>
-								        <div className="resume-degree-time">2010 - 2013</div>
-								    </li>
-							    </ul>
-						    </div>
-					    </section>
-					    <section className="resume-section reference-section mb-5">
-						    <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Awards</h2>
-						    <div className="resume-section-content">
-							    <ul className="list-unstyled resume-awards-list">
-								    <li className="mb-2 ps-4 position-relative">
-								        <i className="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
-								        <div className="resume-award-name">Award Name Lorem</div>
-								        <div className="resume-award-desc">Award desc goes here, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</div>
-								    </li>
-								    <li className="mb-0 ps-4 position-relative">
-								        <i className="resume-award-icon fas fa-trophy position-absolute" data-fa-transform="shrink-2"></i>
-								        <div className="resume-award-name">Award Name Ipsum</div>
-								        <div className="resume-award-desc">Award desc goes here, ultricies nec, pellentesque.</div>
-								    </li>
-							    </ul>
-						    </div>
-					    </section>
-					    <section className="resume-section language-section mb-5">
-						    <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Language</h2>
-						    <div className="resume-section-content">
-							    <ul className="list-unstyled resume-lang-list">
-								    <li className="mb-2"><span className="resume-lang-name font-weight-bold">English</span> <small className="text-muted font-weight-normal">(Native)</small></li>
-								    <li className="mb-2 align-middle"><span className="resume-lang-name font-weight-bold">French</span> <small className="text-muted font-weight-normal">(Professional)</small></li>
-								    <li><span className="resume-lang-name font-weight-bold">Spanish</span> <small className="text-muted font-weight-normal">(Professional)</small></li>
-							    </ul>
-						    </div>
-					    </section>
-					    <section className="resume-section interests-section mb-5">
-						    <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">Interests</h2>
-						    <div className="resume-section-content">
-							    <ul className="list-unstyled">
-								    <li className="mb-1">Climbing</li>
-								    <li className="mb-1">Snowboarding</li>
-								    <li className="mb-1">Cooking</li>
-							    </ul>
-						    </div>
-					    </section>
-					    
-				    </div>
-			    </div>
-		    </div>
-		    
-		    
-	    </div>
-    </article> 
-
-    
-    <footer className="footer text-center pt-2 pb-5">
-	    
-        <small className="copyright">Designed with <span className="sr-only">love</span><i className="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-    </footer>
-        </>
-    )
+        <footer class="footer text-center py-4">
+          <small class="copyright text-muted">
+            Designed with <span class="sr-only">love</span>
+            <i class="fas fa-heart"></i> by{" "}
+            <a
+              class="theme-link"
+              href="http://themes.3rdwavemedia.com"
+              target="_blank"
+            >
+              Xiaoying Riley
+            </a>{" "}
+            for developers
+          </small>
+        </footer>
+      </div>
+    </>
+  );
 }
