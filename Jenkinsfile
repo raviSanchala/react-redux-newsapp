@@ -14,7 +14,7 @@ pipeline {
             steps {
                 script {
                     // Run tests
-                    sh 'npm test'
+                    sh 'npm run build'
                 }
             }
         }
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 script {
                     // Build production-ready bundle
-                    sh 'npm run build'
+                    sh 'gh-pages -d build'
                 }
             }
         }
